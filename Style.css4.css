@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+
+h2 {
+	font-family: 'playfair display', serif;
+	font-size: 200%;
+	font-weight: 700;
+	color: #2C2C2C;
+	text-align: center;
+	text-decoration: underline;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	color: #2C2C2C;
+	font-size: 140%;
+	line-height: 180%;
+	text-align: justify;
+	font-weight: 300;
+}
+
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(file:///D:/IA%20project/IMG_0828.JPG) no-repeat 50% 50%;
+	background-size: cover;
+	top: 0;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+	font-family: 'playfair display', serif;
+	font-size: 300%;
+	font-weight: 700;
+    color: #FFFFFF;
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px #000;
+}
+
+.content p {
+	color: #FFFFFF;
+}
+
+.content img {
+	width: 200px;
+	height: 200px;
+}
+
+.inner {
+	max-width: 600px;
+	margin: auto;
+	font-size: 170%;
+	line-height: 1.6;
+	padding: 10px;
+}
+
+/*---start nav---*/
+
+nav {
+	background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+nav a {
+	float: left;
+  color: #2C2C2C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+
+/*---end nav---*/
+
+.left-col {
+	width: 60%;
+	float: left;
+	margin: 4% 0 4% 4%;
+}
+
+.sidebar {
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+
+.break {
+	display: none;
+}
+
+.clearfix {
+	clear: both;
+	height: 5px;
+}
+
+footer.second {
+	background-color: #2C2C2C;
+}
+
+footer.second p {
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5%;
+}
+
+/*slide show*/
+
+#slide-show{
+	width: 50%;
+	float: left;
+	margin: auto;
+	display: block;
+}
+
+.slider {
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.slides {
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input {
+	display: none;
+}
+
+.slide {
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img {
+	width: 800px;
+	height: 500px;
+}
+
+/*css for manual slide navigaion*/
+
+.navigation-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #40D3DC;
+		padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+	
+}
+
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+
+.manual-btn:hover{
+	background: #40D3DC;
+}
+
+#radio1:checked ~ .first {
+	margin-left: 0;
+}
+
+#radio2:checked ~ .second {
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .third {
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .fourth {
+	margin-left: -60%;
+}
+
+/*automatic navigation*/
+
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+}
+
+.navigation-auto div{
+	border: 2px solid #40d3dc;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40d3dc;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40d3dc;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40d3dc;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40d3dc;
+}
